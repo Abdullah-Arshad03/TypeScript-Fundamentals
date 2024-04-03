@@ -7,6 +7,7 @@ console.log(typeof sales);
 console.log(sales);
 const func = (document) => {
     console.log(document);
+    return document;
 };
 func(9);
 let user = [1, 'Abdullah', true];
@@ -24,4 +25,13 @@ console.log('this is the meduim size : ', Size.meduim);
 console.log('this is the meduim size : ', Size.large);
 let newVariable = Size.large;
 console.log('this is the new variable', newVariable);
+let object = {
+    name: 'Abdullah',
+    id: 211316,
+    isPresent: false,
+    retire: (name) => {
+        console.log('this is the ', name);
+    }
+};
+console.log(object.retire('arshad'));
 //# sourceMappingURL=index.js.map

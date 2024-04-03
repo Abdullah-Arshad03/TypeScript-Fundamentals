@@ -17,8 +17,9 @@ console.log (typeof sales)
 console.log(sales)
 
 
-const func = (document: number) =>{
+const func = (document: number) : number =>{
 console.log(document)
+return document
 }
 
 func(9)
@@ -57,6 +58,21 @@ console.log('this is the meduim size : ',Size.large)
 let newVariable: Size = Size.large
 
 console.log('this is the new variable', newVariable)
+
+
+// working with the objects
+
+let object : {name: string , id: number ,  isPresent: boolean , retire: (name:string)=> void }= {
+    name : 'Abdullah',
+    id : 211316,
+    isPresent: false ,
+    retire: (name : string)=>{
+        console.log('this is the ' , name)
+    }
+
+}
+
+console.log(object.retire('arshad'))
 
 
 
