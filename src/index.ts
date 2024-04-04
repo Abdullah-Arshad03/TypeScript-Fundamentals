@@ -118,3 +118,54 @@ let i = 9
 console.log(typeof i.toString())
 console.log(typeof i)
 
+
+let student : {id: number , name : string , depart: (department: string)=> void} = {
+    id : 211316,
+    name : 'Abdullah',
+    depart : (department: string)=>{
+        console.log('the department of abdullah is', department)
+    }
+}
+
+
+let student2 : {another: boolean} = {
+    ...student,
+    another : true
+}
+console.log(student.depart('software Engineering!'))
+
+console.log(student2)
+
+// type Student 
+
+//union in the typeScript
+
+let lmao = (num2 : number | string): number => {
+    if(typeof num2 === 'number'){
+        console.log('run number')
+        return num2
+    }
+    else{
+        console.log('run string')
+          return parseInt(num2)*3
+    }
+}
+
+lmao('string')
+
+let neww : number | string ; 
+neww = 'new string'
+neww = 9 
+console.log(neww)
+
+let newww: number | string ;
+newww = 'lmao this is very true';
+
+console.log(newww)
+
+
+
+
+
+
+
