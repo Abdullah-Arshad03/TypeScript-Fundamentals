@@ -69,7 +69,6 @@ let object : {name: string , id: number ,  isPresent: boolean , retire: (name:st
     retire: (name : string)=>{
         console.log('this is the ' , name)
     }
-
 }
 
 console.log(object.retire('arshad'))
