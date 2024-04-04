@@ -1,37 +1,33 @@
 "use strict";
-let sales = 123456;
-let course = 'TypeScript';
-let isPublished = true;
-let lmao;
-console.log(typeof sales);
-console.log(sales);
-const func = (document) => {
-    console.log(document);
-    return document;
-};
-func(9);
-let user = [1, 'Abdullah', true];
-console.log('the type is now ', typeof user[0].toString());
-console.log('the type of the first element of the tuple is : ', typeof user[0]);
-console.log(' this is the tuple ', user);
-var Size;
-(function (Size) {
-    Size[Size["small"] = 4] = "small";
-    Size[Size["meduim"] = 5] = "meduim";
-    Size[Size["large"] = 6] = "large";
-})(Size || (Size = {}));
-console.log('this is the small one ', Size.small);
-console.log('this is the meduim size : ', Size.meduim);
-console.log('this is the meduim size : ', Size.large);
-let newVariable = Size.large;
-console.log('this is the new variable', newVariable);
-let object = {
-    name: 'Abdullah',
-    id: 211316,
-    isPresent: false,
-    retire: (name) => {
-        console.log('this is the ', name);
+console.log("practicing yesterdays concepts !");
+let myName = "my is Abdullah";
+console.log(myName);
+let id = 211316;
+console.log(typeof id);
+console.log("Working with the Functions");
+var Enum;
+(function (Enum) {
+    Enum[Enum["first"] = 9] = "first";
+    Enum[Enum["second"] = 10] = "second";
+    Enum[Enum["third"] = 11] = "third";
+})(Enum || (Enum = {}));
+console.log(Enum.first, Enum.second, Enum.third);
+let arr = ["sldf"];
+let objects = {
+    company: "futurenostics",
+    area: 11,
+    func: (date) => {
+        return date;
     }
 };
-console.log(object.retire('arshad'));
+console.log(objects.area);
+console.log(objects.func(33));
+const sum = (num1) => {
+    console.log('im in the sum and the type is : ', typeof num1);
+};
+sum(3);
+sum('9');
+let i = 9;
+console.log(typeof i.toString());
+console.log(typeof i);
 //# sourceMappingURL=index.js.map
